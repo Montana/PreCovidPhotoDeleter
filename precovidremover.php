@@ -3,6 +3,7 @@
 $dir = '/my/image/folder/';
 //max age for an image (in seconds)
 //    2592000sec = 30days
+//can make photos delete starting March 13th, 2020 (which is where I set mine) - Montana Mendy
 $delafter = 2592000;
 $imgs = scandir( $dir );
 foreach( $imgs as $img ){

@@ -11,7 +11,7 @@ foreach( $imgs as $img ){
     $age = filemtime( $dir.'/'.$img );
     if( ( $age + $delafter ) < time() ){
         if( unlink( $dir.'/'.$img ) ){
-            $log[] = 'Deleted: '.$img;
+            $log[] = 'Pre-COVID photos deleted.: '.$img;
         }
         else{
             $log[] = 'Error deleting:'.$img;
